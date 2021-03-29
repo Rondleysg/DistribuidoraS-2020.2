@@ -141,7 +141,11 @@ switch(opcao1) {
 					System.out.println(d1.listaDeProdutos.get(i).toString());
 					}
 				}
+				break;
 			}
+			break;
+			default:
+				System.out.println("Opção inválida.");
 		}
 		}while(!opcao2.equalsIgnoreCase(sair));
 	break;
@@ -272,7 +276,11 @@ switch(opcao1) {
 						System.out.println(d2.listaDeProdutos.get(i).toString());
 						}
 					}
+					break;
 				}
+				break;
+			default:
+				System.out.println("Opção inválida.");
 			}
 			}while(!opcao2.equalsIgnoreCase(sair));
 		break;

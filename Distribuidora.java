@@ -19,6 +19,12 @@ public class Distribuidora {
                       }
 				break;
 		    }
+		 for (int i = 0; i < listaDeProdutosP.size(); i++) {
+				if(listaDeProdutosP.get(i).getNomeDoProduto().equals(nome)){
+							return listaDeProdutosP.get(i);
+                   }
+				break;
+		    }
 		return null;
 	}
 	public Produto buscarProduto(int codigo) {
@@ -28,6 +34,12 @@ public class Distribuidora {
                      }
 				break;
 		    }
+		 for (int i = 0; i < listaDeProdutosP.size(); i++) {
+				if(listaDeProdutosP.get(i).getNomeDoProduto().equals(nome)){
+							return listaDeProdutosP.get(i);
+                }
+				break;
+		    }
 		return null;
 	}
 	public Produto buscarProdutomarca(String marca) {
@@ -35,6 +47,12 @@ public class Distribuidora {
 				if(listaDeProdutos.get(i).getMarca().equals(marca)){
 							return listaDeProdutos.get(i);
                      }
+				break;
+		    }
+		 for (int i = 0; i < listaDeProdutosP.size(); i++) {
+				if(listaDeProdutosP.get(i).getNomeDoProduto().equals(nome)){
+							return listaDeProdutosP.get(i);
+                }
 				break;
 		    }
 		return null;
